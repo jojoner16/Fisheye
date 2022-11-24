@@ -1,3 +1,4 @@
+                                    //  page d'accueil photographes
 function photographerFactory(data) {
 
     const { name, portrait, id, country, city, tagline, price } = data;
