@@ -23,7 +23,7 @@ async function init() {
     // Récupère les données des photographes pour ensuite les insérer dans index.html
     const { photographers } = await getPhotographers();
     displayData(photographers);
-    
+
 };
     
 init();
