@@ -24,13 +24,13 @@ h1 {
     margin-left: 100px;
 }
 
+                        /* section photogragres page d'accueil */
 .photographer_section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 70px;
     margin-top: 100px;
 }
-
 .photographer_section article {
     justify-self: center;
     display: flex;
@@ -38,13 +38,13 @@ h1 {
     align-items: center;
     flex-direction: column;
 }
-
 .photographer_section article h2 {
     color: #D3573C;
     font-size: 36px;
 }
-
 .photographer_section article img {
     height: 200px;
     width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
 }
