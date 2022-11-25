@@ -13,7 +13,7 @@
 
     <title>Photographe - Fisheye</title>
     <meta name="description" content="Page de présentation des photos et vidéos du photographe ainsi que le moyen de le contacter">
-    
+
   </head>
 
   <body>
@@ -30,6 +30,7 @@
         <button class="contact_button" onclick="displayModal()" tabindex="0" aria-haspopup="dialog" aria-label="Contactez Moi">Contactez-moi</button>
       </section>
 
+                                                      <!-- filtres -->
       <label class="dropdown-label">Trier par</label>
       <div data-value="popularity" class="dropdown" aria-label="Order By"> 
         <button onclick="dropdown(event)" tabindex="0" aria-haspopup="listbox" id="dropdownButton">Popularité</button>
@@ -58,6 +59,7 @@
         </ul>
       </div>
 
+                                                  <!-- travaux photographes -->
       <section class="photograph-work"></section>
 
       <div class="likesAndPrice">
@@ -70,6 +72,7 @@
 
     </main>
 
+                                            <!-- modal de contact -->
     <div id="contact_modal" role="dialog" aria-labelledby="contactMe" aria-label="image closeup view">
 			<div class="modal">
 				<header>
