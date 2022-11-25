@@ -1,7 +1,4 @@
-#contact_modal {
-    display: none;
-}
-
+                            /* header photographes */
 .photograph-header {
     display: flex;
     align-items: center;
@@ -12,7 +9,35 @@
     margin: 0 100px 20px;
     border-radius: 5px;
 }
+.photographer_img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 0 0 50px;
+}
+.photographer_profil h1{
+    margin: 0;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 83px;
+    color: #D3573C;
+}
+.photographer_profil p, .photographer_profil h2{
+    margin: 0 0 19px;
+}
+h2{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    color: #901C1C;
+}
+.photographer_profil p{
+    font-size: 18px;
+    line-height: 23px;
+    color: #525252;
+}
 
+                            /* bouton contact */
 .contact_button {
     font-size: 20px;
     font-weight: bold;
@@ -26,9 +51,182 @@
     cursor: pointer;
 }
 
+                            /* images/travaux photographes */
+.photograph-work {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 95px;
+    margin: 30px 100px 100px;
+}
+.thumb-imgfull {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-width: 0;
+} 
+.thumb-imgfull .thumb-img{
+    cursor: pointer;
+} 
+.thumb-img{
+    object-fit: cover;
+    border-radius: 5px;
+    background: grey;
+    width: 100%;
+    height: 450px;
+} 
+.thumb-imgfull figcaption{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px
+}
+.thumb-imgfull h2{
+    margin: 10px 0 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+                            /* Like images */
+.likes{
+    margin: 10px 0 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.likes[liked] {
+    cursor: default;
+}
+.likes img {
+    height: 18px;
+    width: 18px;
+    object-fit: contain;
+    transition: .2s;
+}
+.likes[liked] img{
+    transform: scale(1.4);
+    filter: drop-shadow(0 4px 1px rgb(0 0 0/.2));
+}
+.number-likes{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 31px;
+    margin-right: 6px;
+    color: #911C1C;
+}
+
+                            /* Compteur total de likes */
+.likesAndPrice{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    right: 36px;
+    bottom: 0;
+    height: 50px;
+    padding: 0 30px;
+    background: #D3573C;
+    border-radius: 5px 5px 0 0;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+}
+.totalLikes img{
+    filter: brightness(0);
+}
+
+                            /* Filtre */
+.dropdown-label{
+    margin-left: 100px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+    margin-left: 25px;
+    padding: 0;
+    box-sizing: border-box;
+    width: 170px;
+    background: #911C1C;
+    border-radius: 5px;
+    text-align: start;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 23px;
+    color: white;
+    cursor: pointer;
+}
+.dropdown button{
+  display: block;
+  padding: 20px 20px 20px;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  background: none;
+  text-align: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-weight: inherit;
+}
+.dropdown .arrow{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    object-fit: contain;
+    width: 16px;
+    height: 23px;
+    transform: none;
+    pointer-events: none;
+}
+.dropdown-options{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    z-index: 1;
+    background: #911C1C;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 0 0 5px 5px;
+}
+.dropdown-options li{
+    position: relative;
+    padding: 14px 20px 14px;
+}
+.dropdown-options li::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 150px;
+    height: 1px;
+    background: white;
+}
+.dropdown-open{
+    border-radius: 5px 5px 0 0;
+}
+.dropdown-open .arrow{
+    transform: rotate(180deg);
+}
+.dropdown-open .dropdown-options{
+    display: block;
+}
+.dropdown-open .dropdown-hide{
+    display: none;
+}
+
+                            /* modal contact */
+#contact_modal {
+    display: none;
+}
+
 .modal {
     border-radius: 5px;
-    background-color: #DB8876;
+    background-color: #D3573C;
     width: 50%;
     display: flex;
     flex-direction: column;
