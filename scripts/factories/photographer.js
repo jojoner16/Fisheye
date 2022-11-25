@@ -48,7 +48,7 @@ function photographerFactory(data) {
         img.setAttribute( 'src', picture );
         img.setAttribute( 'alt', `Photo de profil de ${name}` );
         img.setAttribute( 'loading', 'lazy' );
-        img.className = 'photographer_card__img';
+        img.className = 'photographer_img';
 
         return (img);
 
