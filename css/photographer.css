@@ -3,9 +3,14 @@
 }
 
 .photograph-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
     background-color: #FAFAFA;
     height: 300px;
-    margin: 0 100px;
+    margin: 0 100px 20px;
+    border-radius: 5px;
 }
 
 .contact_button {
