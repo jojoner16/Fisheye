@@ -20,7 +20,6 @@ function photographerWorkFactory(data) {
         }
 
         // media.setAttribute("onclick", "lightbox(event)");
-        // media.setAttribute("onkeydown", "handleKeyDown(event)?lightbox(event):undefined");
         media.setAttribute("aria-haspopup", "dialog");
         media.setAttribute("aria-label", altText);
         media.setAttribute("tabindex", 0);
