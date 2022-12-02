@@ -69,6 +69,20 @@
 
     </main>
 
+                                                  <!-- lightbox -->
+    <div class="lightbox" role="dialog">
+      <p></p>
+      <nav>
+        <img src="assets/icons/lightboxArrow.svg" alt="précédent" class="previous" aria-label="Previous image" role="link"
+              onclick="lightboxControl(event)" >
+
+        <img src="assets/icons/lightboxArrow.svg" alt="suivant" class="next" aria-label="Next image" role="link"
+              onclick="lightboxControl(event)">
+      </nav>
+      <img src="assets/icons/lightboxClose.svg" alt="fermer" class="close" aria-label="Close dialog" role="button"
+            onclick="lightboxControl(event)">
+    </div>
+
                                             <!-- modal de contact -->
     <div id="contact_modal" role="dialog" aria-labelledby="contactMe" aria-label="image closeup view">
 			<div class="modal">
@@ -101,6 +115,7 @@
 
     <script src="/scripts/utils/contactForm.js"></script>
     <script src="scripts/utils/tabModal.js"></script>
+    <script src="scripts/utils/lightbox.js"></script>
 
   </body>
 </html>
