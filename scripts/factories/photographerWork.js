@@ -19,7 +19,7 @@ function photographerWorkFactory(data) {
             media.setAttribute("preload", "metadata");
         }
 
-        // media.setAttribute("onclick", "lightbox(event)");
+        media.setAttribute("onclick", "lightbox(event)");
         media.setAttribute("aria-haspopup", "dialog");
         media.setAttribute("aria-label", altText);
         media.setAttribute("tabindex", 0);
