@@ -19,7 +19,7 @@
   <body>
 
     <header>
-      <a href="index.html" tabindex="0" aria-label="Fisheye Home page" onkeydown="openlink(event)">
+      <a href="index.html" aria-label="Fisheye Home page" onkeydown="openlink(event)">
         <img src="assets/images/logo.png" class="logo" alt="Fisheye Home page"/>
       </a>
     </header>
@@ -27,35 +27,32 @@
     <main id="main">
 
       <section class="photograph-header">
-        <button class="contact_button" onclick="displayModal()" tabindex="0" aria-haspopup="dialog" aria-label="Contactez Moi">Contactez-moi</button>
+        <button class="contact_button" onclick="displayModal()" aria-haspopup="dialog" aria-label="Contactez Moi">Contactez-moi</button>
       </section>
 
                                                       <!-- filtres -->
       <label class="dropdown-label">Trier par</label>
       <div data-value="popularity" class="dropdown" aria-label="Order By"> 
-        <button onclick="dropdown(event)" tabindex="0" aria-haspopup="listbox" id="dropdownButton">Popularité</button>
+        <button onclick="dropdown(event)" aria-haspopup="listbox" id="dropdownButton">Popularité</button>
         <img src="assets/icons/arrow.svg" alt="" class="arrow">
         <ul class="dropdown-options" role="listbox" aria-labelledby="dropdownButton" aria-activedescendant="popularityDropdown">
+
           <li onclick="selectDropdownOption(event)" 
-              onkeydown="handleKeyDown(event)?selectDropdownOption(event):undefined" 
               class="dropdown-hide" 
               data-value="popularity" 
               role="option"
               id="popularityDropdown"
-              aria-selected="true"
-              tabindex="0">Popularité</li>
+              aria-selected="true">Popularité</li>
+
           <li onclick="selectDropdownOption(event)" 
-              onkeydown="handleKeyDown(event)?selectDropdownOption(event):undefined" 
               data-value="date" 
               role="option"
-              id="dateDropdown"
-              tabindex="0">Date</li>
+              id="dateDropdown">Date</li>
+
           <li onclick="selectDropdownOption(event)" 
-              onkeydown="handleKeyDown(event)?selectDropdownOption(event):undefined" 
               data-value="title" 
               role="option"
-              id="titleDropdown"
-              tabindex="0">Titre</li>
+              id="titleDropdown">Titre</li>
         </ul>
       </div>
 
@@ -77,9 +74,8 @@
 			<div class="modal">
 				<header>
           <h1 id="contactMe">Contactez-moi</h1>
-          <img src="assets/icons/close.svg" alt="" tabindex="0" role="button"
-          onclick="closeModal()" 
-          onkeydown="handleKeyDown(event)?closeModal():undefined" />
+          <img src="assets/icons/close.svg" alt="fermer" role="button"
+          onclick="closeModal()"/>
           <h2></h2>
         </header>
 				<form onsubmit="return sendForm(event)">
@@ -104,6 +100,7 @@
     <script src="/scripts/pages/photographer.js"></script>
 
     <script src="/scripts/utils/contactForm.js"></script>
+    <script src="scripts/utils/tabModal.js"></script>
 
   </body>
 </html>
