@@ -238,6 +238,9 @@ h2{
     line-height: 1.3;
     background: #52525279;
 }
+#contact_modal.modal-show{
+    display: flex;
+}
 .modal {
     border-radius: 5px;
     background-color: #D3573C;
