@@ -9,6 +9,7 @@ document.addEventListener( 'keydown',
 
 function displayModal() {
     const modal = document.getElementById("contact_modal");
+    tabindexSet(-1);
 	modal.classList.add("modal-show");
     modal.querySelector("img").focus();
 
@@ -17,6 +18,7 @@ function displayModal() {
 
 function closeModal() {
     const modal = document.getElementById("contact_modal");
+    tabindexSet(0);
 	modal.classList.remove("modal-show");
     setTimeout( () => document.querySelector("main .contact_button").focus() , 50);
     IsFormContactKeyListenerActive = false;
