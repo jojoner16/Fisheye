@@ -156,11 +156,17 @@ function orderWork() {
 }
 
 async function init() {
+
+    
+
     // Récupère les données des photographes avant de charger le reste des fonctions
     const { photographers, media } = await getPhotographers();
 
     // Trouve le photographe en fonction du paramètre de la page
     const photographer = photographers.find( photographe => photographe.id == getPhotographerId() );
+
+    // Affiche le nom du photographe actuel dans le titre de la page
+    document.title = `${photographer.name} - Fisheye`;
 
     // Affiche le nom du photographe dans la page contact
     document.querySelector(".modal header>h2").textContent = photographer.name;
