@@ -128,7 +128,7 @@ h2{
     font-size: 22px;
     line-height: 31px;
     margin-right: 6px;
-    color: #911C1C;
+    color: #901C1C;
 }
 
                             /* Compteur total de likes */
@@ -165,7 +165,7 @@ h2{
     padding: 0;
     box-sizing: border-box;
     width: 170px;
-    background: #911C1C;
+    background: #901C1C;
     border-radius: 5px;
     text-align: start;
     font-size: 20px;
@@ -173,6 +173,12 @@ h2{
     line-height: 23px;
     color: white;
     cursor: pointer;
+}
+.dropdown:hover, .dropdown:focus-within,
+.dropdown:hover .dropdown-options, 
+.dropdown:focus-within .dropdown-options {
+    background: #D3573C;
+    color: black;
 }
 .dropdown button {
   display: block;
@@ -202,7 +208,7 @@ h2{
     left: 0;
     display: none;
     z-index: 1;
-    background: #911C1C;
+    background: #901C1C;
     width: 100%;
     list-style: none;
     padding: 0;
@@ -349,7 +355,7 @@ input:focus, textarea:focus {
     left: calc(50% - 1050px / 2);
     font-size: 24px;
     line-height: 31px;
-    color: #911C1C;
+    color: #901C1C;
     margin: 12px 0 0;
 }
 .lightbox nav {
