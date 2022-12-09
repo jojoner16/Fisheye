@@ -157,8 +157,6 @@ function orderWork() {
 
 async function init() {
 
-    
-
     // Récupère les données des photographes avant de charger le reste des fonctions
     const { photographers, media } = await getPhotographers();
 
@@ -177,6 +175,7 @@ async function init() {
 
     orderWork();
     updateTotalLikes();
+    
 };
     
 init();
