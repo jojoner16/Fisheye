@@ -1,184 +1,186 @@
-                            /* header photographes */
+/* header photographes */
 .photograph-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px;
-    background-color: #FAFAFA;
-    height: 300px;
-    margin: 0 100px 20px;
-    border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  background-color: #fafafa;
+  height: 300px;
+  margin: 0 100px 20px;
+  border-radius: 5px;
 }
 .photographer_img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin: 0 0 0 50px;
-    object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 0 0 50px;
+  object-fit: cover;
 }
 .photographer_profil h1 {
-    margin: 0;
-    font-weight: normal;
-    font-size: 64px;
-    line-height: 83px;
-    color: #D3573C;
+  margin: 0;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 83px;
+  color: #d3573c;
 }
-.photographer_profil p, .photographer_profil h2 {
-    margin: 0 0 19px;
+.photographer_profil p,
+.photographer_profil h2 {
+  margin: 0 0 19px;
 }
-h2{
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 31px;
-    color: #901C1C;
+h2 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 31px;
+  color: #901c1c;
 }
 .photographer_profil p {
-    font-size: 18px;
-    line-height: 23px;
-    color: #525252;
+  font-size: 18px;
+  line-height: 23px;
+  color: #525252;
 }
 
-                            /* bouton contact */
+/* bouton contact */
 .contact_button {
-    font-size: 20px;
-    font-weight: bold;
-    color: #FAFAFA;
-    padding: 11px;
-    width: 170px;
-    height: 70px;
-    border: none;
-    background-color: #901C1C;
-    border-radius: 5px;
-    cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fafafa;
+  padding: 11px;
+  width: 170px;
+  height: 70px;
+  border: none;
+  background-color: #901c1c;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .contact_button:hover {
-    background-color: #D3573C;
-    color: black;
+  background-color: #d3573c;
+  color: black;
 }
 .contact_button:focus {
-    outline: none;
-    border: none;
+  outline: none;
+  border: none;
 }
 
-                            /* images/travaux photographes */
+/* images/travaux photographes */
 .photograph-work {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
-    gap: 95px;
-    margin: 30px 100px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  gap: 95px;
+  margin: 30px 100px 100px;
 }
 .thumb-imgfull {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    min-width: 0;
-} 
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-width: 0;
+}
 .thumb-imgfull .thumb-img {
-    cursor: pointer;
-} 
+  cursor: pointer;
+}
 .thumb-imgfull:hover {
-    filter: brightness(0.8);
+  filter: brightness(0.8);
 }
 .thumb-img {
-    object-fit: cover;
-    border-radius: 5px;
-    background: grey;
-    width: 100%;
-    height: 450px;
-} 
+  object-fit: cover;
+  border-radius: 5px;
+  background: grey;
+  width: 100%;
+  height: 450px;
+}
 .thumb-img:focus {
-    outline: none;
-    border: none;
+  outline: none;
+  /* border: none; */
 }
 .thumb-imgfull figcaption {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
 }
 .thumb-imgfull h2 {
-    margin: 10px 0 0;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+  margin: 10px 0 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-                            /* Like images */
+/* Like images */
 .likes {
-    margin: 10px 0 0;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+  margin: 10px 0 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 .likes[liked] {
-    cursor: default;
+  cursor: default;
 }
 .likes img {
-    height: 18px;
-    width: 18px;
-    object-fit: contain;
-    transition: .2s;
+  height: 18px;
+  width: 18px;
+  object-fit: contain;
+  transition: 0.2s;
 }
 .likes[liked] img {
-    transform: scale(1.4);
-    filter: drop-shadow(0 4px 1px rgb(0 0 0/.2));
+  transform: scale(1.4);
+  filter: drop-shadow(0 4px 1px rgb(0 0 0/0.2));
 }
 .number-likes {
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 31px;
-    margin-right: 6px;
-    color: #901C1C;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 31px;
+  margin-right: 6px;
+  color: #901c1c;
 }
 
-                            /* Compteur total de likes */
+/* Compteur total de likes */
 .likesAndPrice {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    gap: 60px;
-    right: 36px;
-    bottom: 0;
-    height: 50px;
-    padding: 0 30px;
-    background: #D3573C;
-    border-radius: 5px 5px 0 0;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 31px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  right: 36px;
+  bottom: 0;
+  height: 50px;
+  padding: 0 30px;
+  background: #d3573c;
+  border-radius: 5px 5px 0 0;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
 }
 .totalLikes img {
-    filter: brightness(0);
+  filter: brightness(0);
 }
 
-                            /* Filtre */
+/* Filtre */
 .dropdown-label {
-    margin-left: 100px;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 23px;
+  margin-left: 100px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
 }
 .dropdown {
-    position: relative;
-    display: inline-block;
-    margin-left: 25px;
-    padding: 0;
-    box-sizing: border-box;
-    width: 170px;
-    background: #901C1C;
-    border-radius: 5px;
-    text-align: start;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 23px;
-    color: white;
-    cursor: pointer;
+  position: relative;
+  display: inline-block;
+  margin-left: 25px;
+  padding: 0;
+  box-sizing: border-box;
+  width: 170px;
+  background: #901c1c;
+  border-radius: 5px;
+  text-align: start;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 23px;
+  color: white;
+  cursor: pointer;
 }
-.dropdown:hover, .dropdown:focus-within,
-.dropdown:hover .dropdown-options, 
+.dropdown:hover,
+.dropdown:focus-within,
+.dropdown:hover .dropdown-options,
 .dropdown:focus-within .dropdown-options {
-    background: #D3573C;
-    color: black;
+  background: #d3573c;
+  color: black;
 }
 .dropdown button {
   display: block;
@@ -193,200 +195,206 @@ h2{
   font-weight: inherit;
 }
 .dropdown .arrow {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    object-fit: contain;
-    width: 16px;
-    height: 23px;
-    transform: none;
-    pointer-events: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  object-fit: contain;
+  width: 16px;
+  height: 23px;
+  transform: none;
+  pointer-events: none;
 }
 .dropdown-options {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: none;
-    z-index: 1;
-    background: #901C1C;
-    width: 100%;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    border-radius: 0 0 5px 5px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  z-index: 1;
+  background: #901c1c;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0 0 5px 5px;
 }
 .dropdown-options li {
-    position: relative;
-    padding: 14px 20px 14px;
+  position: relative;
+  padding: 14px 20px 14px;
 }
 .dropdown-options li::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 10px;
-    width: 150px;
-    height: 1px;
-    background: white;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 150px;
+  height: 1px;
+  background: white;
 }
 .dropdown-open {
-    border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
 }
 .dropdown-open .arrow {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .dropdown-open .dropdown-options {
-    display: block;
+  display: block;
 }
 .dropdown-open .dropdown-hide {
-    display: none;
+  display: none;
 }
 
-                            /* modal contact */
+/* modal contact */
 #contact_modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    line-height: 1.3;
-    background: #52525279;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  line-height: 1.3;
+  background: #52525279;
 }
 #contact_modal.modal-show {
-    display: flex;
+  display: flex;
 }
 .modal {
-    border-radius: 5px;
-    background-color: #D3573C;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 35px 38px;
-    margin: auto;
-    box-sizing: border-box;
-    margin-top: 2.5%;
+  border-radius: 5px;
+  background-color: #d3573c;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 35px 38px;
+  margin: auto;
+  box-sizing: border-box;
+  margin-top: 2.5%;
 }
 .modal .contact_button:hover {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 .modal header {
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 0;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
 }
 .modal header img {
-    cursor: pointer;
+  cursor: pointer;
 }
-.modal header h1, .modal header h2 {
-    font-size: 64px;
-    margin: 0;
-    font-weight: normal;
-    text-align: start;
-    color: black;
+.modal header h1,
+.modal header h2 {
+  font-size: 64px;
+  margin: 0;
+  font-weight: normal;
+  text-align: start;
+  color: black;
 }
 .modal header h2 {
-    width: 100%;
-    margin-top: 10px;
+  width: 100%;
+  margin-top: 10px;
 }
 form {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 60px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 60px;
 }
 form label {
-    color: #312E2E;
-    font-size: 36px;
+  color: #312e2e;
+  font-size: 36px;
 }
 form div {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: self-start;
-    margin-bottom: 26px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: self-start;
+  margin-bottom: 26px;
 }
-form input, form textarea {
-    width: 100%;
-    height: 68px;
-    border: none;
-    border-radius: 5px;
-    font-size: 28px;
-    padding: 10px;
-    box-sizing: border-box;
+form input,
+form textarea {
+  width: 100%;
+  height: 68px;
+  border: none;
+  border-radius: 5px;
+  font-size: 28px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 form textarea {
-    height: 170px;
-    resize: none;
+  height: 170px;
+  resize: none;
 }
-input:focus, textarea:focus {
-    border: none;
-    outline: none;
+input:focus,
+textarea:focus {
+  border: none;
+  outline: none;
 }
 
-                                /*Modal Lightbox */
+/*Modal Lightbox */
 .lightbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background: #E5E5E5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #e5e5e5;
 }
 .lightbox .thumb-img {
-    position: absolute;
-    object-fit: cover;
-    z-index: 1;
-    width: 56%;
-    height: 88%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 1;
+  width: 56%;
+  height: 88%;
 }
 .lightbox p {
-    position: absolute;
-    top: 94%;
-    left: calc(50% - 1050px / 2);
-    font-size: 24px;
-    line-height: 31px;
-    color: #901C1C;
-    margin: 12px 0 0;
+  position: absolute;
+  top: 94%;
+  left: calc(50% - 1050px / 2);
+  font-size: 24px;
+  line-height: 31px;
+  color: #901c1c;
+  margin: 12px 0 0;
 }
 .lightbox nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1050px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1050px;
 }
-.lightbox .previous, .lightbox .next, .lightbox .close {
-    cursor: pointer;
+.lightbox .previous,
+.lightbox .next,
+.lightbox .close {
+  cursor: pointer;
 }
-.lightbox .previous, .lightbox .next {
-    height: 48px;
-    width: 42px;
-    margin: 0 35px;
-    object-fit: contain;
+.lightbox .previous,
+.lightbox .next {
+  height: 48px;
+  width: 42px;
+  margin: 0 35px;
+  object-fit: contain;
 }
 .lightbox .previous {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .lightbox .close {
-    position: absolute;
-    top: calc(6% + 20px);
-    right: calc(50% - 524px - 77px);
-    height: 42px;
-    width: 42px;
+  position: absolute;
+  top: calc(6% + 20px);
+  right: calc(50% - 524px - 77px);
+  height: 42px;
+  width: 42px;
 }
 .lightbox-show {
-    display: flex;
+  display: flex;
 }
 .lightbox img[disabled] {
-    cursor: not-allowed;
-    filter: grayscale(1);
+  cursor: not-allowed;
+  filter: grayscale(1);
 }
