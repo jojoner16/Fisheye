@@ -69,5 +69,12 @@ function photographerFactory(data) {
     return profil;
   }
 
-  return { getUserCardDOM, price, getUserPictureDOM, getUserProfilDOM };
+  return { getUserCardDOM, getUserProfilDOM, getUserPictureDOM, price };
 }
+photographerFactory({
+  name: "",
+  portrait: "",
+  country: "",
+  city: "",
+  tagline: "",
+});

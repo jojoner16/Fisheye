@@ -27,6 +27,7 @@ function getPhotographerId() {
   const params = Object.fromEntries(urlSearchParams.entries());
   return params.photographer;
 }
+getPhotographerId();
 
 function getFormData() {
   const firstName = document.getElementById("firstName").value;

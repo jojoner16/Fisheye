@@ -39,6 +39,7 @@
         <button
           class="contact_button"
           onclick="displayModal()"
+          tabindex="0"
           aria-haspopup="dialog"
           aria-label="Contactez Moi"
         >
@@ -145,7 +146,7 @@
     <div
       id="contact_modal"
       role="dialog"
-      aria-labelledby="contactMe"
+      aria-labelledby="contactezMoi"
       aria-label="image closeup view"
     >
       <div class="modal">
@@ -154,6 +155,7 @@
           <img
             src="assets/icons/close.svg"
             alt="fermer"
+            tabindex="0"
             role="button"
             onclick="closeModal()"
           />

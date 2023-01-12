@@ -64,6 +64,13 @@ function photographerWorkFactory(data) {
 
     return figure;
   }
-
   return { getUserWorkDOM };
 }
+photographerWorkFactory({
+  title: "titre",
+  image: "image.jpg",
+  video: undefined,
+  likes: 0,
+  date: "2021-01-01",
+  altText: "altText",
+});

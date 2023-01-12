@@ -28,6 +28,7 @@ function lightbox(event) {
 
   IsLightboxKeyListenerActive = true;
 }
+// lightbox({ currentTarget: { parentNode: "" } });
 
 function loadLightbox() {
   const lightbox = document.querySelector(".lightbox");
@@ -62,6 +63,7 @@ function loadLightbox() {
   lightbox.querySelector(".thumb-img").removeAttribute("onclick");
   lightboxText.textContent = currentText;
 }
+// loadLightbox();
 
 function lightboxControl(event) {
   switch (event.currentTarget.className) {
@@ -76,6 +78,7 @@ function lightboxControl(event) {
       break;
   }
 }
+lightboxControl({ currentTarget: { className: "" } });
 
 function handleLightboxKeyDown(event) {
   switch (event.key) {
