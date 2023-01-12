@@ -183,7 +183,7 @@ async function init() {
   document.querySelector(".modal header>h2").textContent = photographer.name;
   document
     .querySelector(".modal header>h1")
-    .setAttribute("arial-label", `Contact me ${photographer.name}`);
+    .setAttribute("arial-label", `Contactez moi ${photographer.name}`);
 
   displayPhotographerData(photographer);
   displayWorkData(media);

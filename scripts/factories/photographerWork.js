@@ -43,7 +43,7 @@ function photographerWorkFactory(data) {
     divLikes.setAttribute("onclick", "like(event)");
     divLikes.setAttribute("role", "button");
     divLikes.className = "likes";
-    divLikes.ariaLabel = "likes";
+    divLikes.ariaLabel = "Total j'aime";
 
     const numberLikes = document.createElement("span");
     numberLikes.className = "number-likes";
@@ -51,7 +51,7 @@ function photographerWorkFactory(data) {
 
     const imgLikes = document.createElement("img");
     imgLikes.src = "assets/icons/heart.svg";
-    imgLikes.alt = "likes";
+    imgLikes.alt = "Total j'aime";
 
     divLikes.appendChild(numberLikes);
     divLikes.appendChild(imgLikes);

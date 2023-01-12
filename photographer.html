@@ -23,13 +23,13 @@
     <header>
       <a
         href="index.html"
-        aria-label="Fisheye Home page"
+        aria-label="Fisheye page d'accueil"
         onkeydown="openlink(event)"
       >
         <img
           src="assets/images/logo.png"
           class="logo"
-          alt="Fisheye Home page"
+          alt="Fisheye page d'accueil"
         />
       </a>
     </header>
@@ -49,7 +49,7 @@
 
       <!-- filtres -->
       <label class="dropdown-label">Trier par</label>
-      <div data-value="popularity" class="dropdown" aria-label="Order By">
+      <div data-value="popularity" class="dropdown" aria-label="Trier par">
         <button
           onclick="dropdown(event)"
           aria-haspopup="listbox"
@@ -69,6 +69,7 @@
             tabindex="1"
             class="dropdown-hide"
             data-value="popularity"
+            aria-label="Popularité"
             role="option"
             id="popularityDropdown"
             aria-selected="true"
@@ -80,6 +81,7 @@
             onclick="selectDropdownOption(event)"
             tabindex="1"
             data-value="date"
+            aria-label="Date"
             role="option"
             id="dateDropdown"
           >
@@ -90,6 +92,7 @@
             onclick="selectDropdownOption(event)"
             tabindex="1"
             data-value="title"
+            aria-label="Titre"
             role="option"
             id="titleDropdown"
           >
@@ -104,7 +107,10 @@
       <div class="likesAndPrice">
         <span class="totalLikes">
           <span class="totalLikesNumber"></span>
-          <img src="assets/icons/heart.svg" alt="likes" />
+          <img
+            src="assets/icons/heart.svg"
+            alt="Total de j'aime des travaux du photographe"
+          />
         </span>
         <span class="pricePerDay">€ / Jour</span>
       </div>
@@ -118,7 +124,7 @@
           src="assets/icons/lightboxArrow.svg"
           alt="précédent"
           class="previous"
-          aria-label="Previous image"
+          aria-label="Image précédente"
           role="link"
           onclick="lightboxControl(event)"
         />
@@ -127,7 +133,7 @@
           src="assets/icons/lightboxArrow.svg"
           alt="suivant"
           class="next"
-          aria-label="Next image"
+          aria-label="Image suivante"
           role="link"
           onclick="lightboxControl(event)"
         />
@@ -136,25 +142,21 @@
         src="assets/icons/lightboxClose.svg"
         alt="fermer"
         class="close"
-        aria-label="Close dialog"
+        aria-label="Fermer la modal de contact"
         role="button"
         onclick="lightboxControl(event)"
       />
     </div>
 
     <!-- modal de contact -->
-    <div
-      id="contact_modal"
-      role="dialog"
-      aria-labelledby="contactezMoi"
-      aria-label="image closeup view"
-    >
+    <div id="contact_modal" role="dialog" aria-label="contactez-Moi">
       <div class="modal">
         <header>
           <h1 id="contactMe">Contactez-moi</h1>
           <img
             src="assets/icons/close.svg"
             alt="fermer"
+            aria-label="Fermer la modal de contact"
             tabindex="0"
             role="button"
             onclick="closeModal()"
@@ -169,8 +171,7 @@
               name="firstName"
               id="firstName"
               role="textbox"
-              aria-label="First name"
-              aria-labelledby="firstNameLabel"
+              aria-label="Prénom"
               required
             />
             <label for="lastName" id="lastNameLabel">Nom</label>
@@ -179,8 +180,7 @@
               name="lastName"
               id="lastName"
               role="textbox"
-              aria-label="Last name"
-              aria-labelledby="lastNameLabel"
+              aria-label="Nom"
               required
             />
             <label for="email" id="emailLabel">Email</label>
@@ -190,7 +190,6 @@
               id="email"
               role="textbox"
               aria-label="Email"
-              aria-labelledby="emailLabel"
               required
             />
             <label for="yourMessage" id="yourMessageLabel">Votre message</label>
@@ -198,8 +197,7 @@
               name="yourMessage"
               id="yourMessage"
               role="textbox"
-              aria-label="Your message"
-              aria-labelledby="yourMessageLabel"
+              aria-label="Votre message"
               required
             ></textarea>
           </div>
